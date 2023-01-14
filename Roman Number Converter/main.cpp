@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include <string.h>
 
@@ -12,7 +13,6 @@ int main()
 
     cout << "Enter a decimal number"<< endl;
     cin >> num;
-
     tens = num % 10;
     hundreads = (int) num / 10;
     thousands = (int) num / 100;
@@ -38,8 +38,6 @@ int main()
 
             result = result + ')';
         }
-        else
-            result = ' ';
         if(thousands < 4){
             for(int i = 0; i < thousands; i++){
                  result = result + 'C';
@@ -58,8 +56,6 @@ int main()
             else
                 result = result + 'M';
         }
-        else
-            result = ' ';
         if(hundreads < 4){
             for(int i = 0; i < hundreads; i++){
                  result = result + 'X';
@@ -78,8 +74,6 @@ int main()
             else
                 result = result + 'C';
         }
-        else
-            result = ' ';
         if(tens < 4){
             for(int i = 0; i < tens; i++){
                  result = result + 'I';
@@ -98,8 +92,6 @@ int main()
             else
                 result = result + 'X';
         }
-        else
-            result = ' ';
     cout << "Equivalent Roman Number:- "<< endl << result << endl;
     return 0;
 }
